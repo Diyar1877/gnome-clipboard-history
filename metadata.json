@@ -1,0 +1,9 @@
+{
+    "uuid": "clipboard-history@Diyar1877",
+    "name": "Clipboard History",
+    "description": "Windows-style clipboard history, opened with Super+V",
+    "shell-version": ["50"],
+    "url": "https://github.com/Diyar1877/gnome-clipboard-history",
+    "settings-schema": "org.gnome.shell.extensions.clipboard-history",
+    "version": 1
+}

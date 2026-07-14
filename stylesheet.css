@@ -1,0 +1,52 @@
+.clipboard-history-popup {
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 12px;
+    padding: 8px;
+    spacing: 4px;
+    width: 320px;
+}
+
+.clipboard-history-header {
+    spacing: 4px;
+    padding: 2px 4px 8px 4px;
+}
+
+.clipboard-history-title {
+    color: white;
+    font-weight: bold;
+}
+
+.clipboard-history-close {
+    color: white;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.clipboard-history-close:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.clipboard-history-row {
+    spacing: 4px;
+}
+
+.clipboard-history-item {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.clipboard-history-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.clipboard-history-delete {
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.clipboard-history-delete:hover {
+    background-color: rgba(255, 80, 80, 0.25);
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.clipboard-history" path="/org/gnome/shell/extensions/clipboard-history/">
+    <key name="toggle-clipboard-history" type="as">
+      <default>['&lt;Super&gt;v']</default>
+      <summary>Toggle clipboard history popup</summary>
+    </key>
+  </schema>
+</schemalist>
