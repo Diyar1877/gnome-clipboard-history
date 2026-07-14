@@ -5,5 +5,5 @@
     "shell-version": ["50"],
     "url": "https://github.com/Diyar1877/gnome-clipboard-history",
     "settings-schema": "org.gnome.shell.extensions.clipboard-history",
-    "version": 1
+    "version": 2
 }
