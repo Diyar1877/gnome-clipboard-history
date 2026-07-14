@@ -144,7 +144,8 @@ export default class ClipboardHistoryExtension extends Extension {
             this._clipboard.set_text(St.ClipboardType.CLIPBOARD, text);
         this._closePopup();
 
-        GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, () => {
+        this._pasteTimeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, () => {
+            this._pasteTimeoutId = null;
             this._pasteText();
             return GLib.SOURCE_REMOVE;
         });
@@ -182,6 +183,10 @@ export default class ClipboardHistoryExtension extends Extension {
         if (this._pollId) {
             GLib.source_remove(this._pollId);
             this._pollId = null;
+        }
+        if (this._pasteTimeoutId) {
+            GLib.source_remove(this._pasteTimeoutId);
+            this._pasteTimeoutId = null;
         }
         Main.wm.removeKeybinding('toggle-clipboard-history');
 
