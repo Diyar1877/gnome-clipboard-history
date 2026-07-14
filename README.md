@@ -5,8 +5,7 @@ A Windows-style clipboard history popup for GNOME Shell. Press **Super+V**, pick
 ![GNOME Shell](https://img.shields.io/badge/GNOME%20Shell-50-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-<!-- Add a screenshot or GIF of the popup here, e.g.: -->
-<!-- ![Screenshot](docs/screenshot.png) -->
+![Screenshot](docs/screenshot.png)
 
 ## Features
 
@@ -38,7 +37,7 @@ gnome-extensions enable clipboard-history@Diyar1877
 
 ### extensions.gnome.org
 
-Not published there yet — planned for a future release.
+Submitted and pending review at [extensions.gnome.org](https://extensions.gnome.org).
 
 ## Usage
 
@@ -55,7 +54,11 @@ The shortcut is stored as a normal GSettings key, so it can be remapped like any
 gsettings set org.gnome.shell.extensions.clipboard-history toggle-clipboard-history "['<Super>c']"
 ```
 
-> Note: by default, `<Super>v` is bound to GNOME's notification tray. This extension's setup script frees it by rebinding the tray shortcut to `<Super>m` — see `NOTES.md` if you want to change that instead.
+> Note: by default, `<Super>v` is bound to GNOME's notification tray. Free it up first by rebinding the tray shortcut, e.g.:
+>
+> ```bash
+> gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>m']"
+> ```
 
 ## Known limitations
 
